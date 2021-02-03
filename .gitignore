@@ -4,3 +4,6 @@
 
 /plots/
 *.png
+
+# Jupyter notebook checkpoint #
+/.ipynb_checkpoints/
