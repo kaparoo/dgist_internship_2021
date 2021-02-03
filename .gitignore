@@ -1,0 +1,6 @@
+# result datas #
+/best_models/
+*.pth
+
+/plots/
+*.png
