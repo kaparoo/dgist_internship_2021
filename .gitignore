@@ -1,11 +1,13 @@
 # datasets #
 /datasets/*/*.png
 /datasets/*/*.jpg
+/datasets/*/*/*png
+/datasets/*/*/*.jpg
 
 # result datas #
-# /best_models/
+!/best_models/
 /best_models/*.pth
-# /plots/
+!/plots/
 /plots/*.png
 
 # Jupyter notebook checkpoint #
