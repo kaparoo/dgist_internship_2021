@@ -4,13 +4,16 @@ from PIL import Image
 resized_width = 224
 resized_height = 224
 
-root_dir = "./datasets/dataset_blue"
+#root_dir = "./datasets/dataset_blue"
+root_dir = "./datasets"
 
 # label prefix
-prefix_list = ["blocked", "free"]
+# prefix_list = ["blocked", "free"]
+prefix_list = ["obstacle_black"]
 
 # number of images for each label
-number_of_images = [30, 30]
+# num_images = [30, 30]
+num_images = [12]
 
 # image resize function
 def resizeImage(prefix, num):
@@ -38,15 +41,15 @@ def rotateImage(prefix, num):
 
 
 def main():
-    for prefix, num in zip(prefix_list, number_of_images):    
+    for prefix, num in zip(prefix_list, num_images):    
         print(f"Resize (raw) images in {prefix}-labeled folder.")
         resizeImage(prefix, num)
         print(f"Done! Resized {num} images")
 
-    for prefix, num in zip(prefix_list, number_of_images):    
-        print(f"Rotate images in {prefix}-labeled folder.")
-        rotateImage(prefix, num)
-        print(f"Done! Resized {num} images")
+    # for prefix, num in zip(prefix_list, number_of_images):    
+    #    print(f"Rotate images in {prefix}-labeled folder.")
+    #    rotateImage(prefix, num)
+    #    print(f"Done! Resized {num} images")
 
 main()
 

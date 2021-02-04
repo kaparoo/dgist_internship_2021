@@ -1,9 +1,12 @@
-# result datas #
-/best_models/
-*.pth
+# datasets #
+/datasets/*/*.png
+/datasets/*/*.jpg
 
-/plots/
-*.png
+# result datas #
+# /best_models/
+/best_models/*.pth
+# /plots/
+/plots/*.png
 
 # Jupyter notebook checkpoint #
 /.ipynb_checkpoints/
